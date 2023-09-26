@@ -67,3 +67,17 @@ section {
 section img {
     width: 300px;
 }
+
+h1 {
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+section p {
+    font-size: 13px;
+}
