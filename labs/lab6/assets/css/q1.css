@@ -34,10 +34,6 @@ body, html {
 }
 
 
-.button:not(:hover) {
-    animation: rotate2 0.45s forwards;
-}
-
 @keyframes rotate1 {
     0% {
         transform: rotate(0deg);
@@ -47,15 +43,3 @@ body, html {
     }
 }
 
-@keyframes rotate2 {
-    0% {
-        transform: rotate(180deg);
-        opacity: 1;
-        border-radius: 50%;
-    }
-    100% {
-        transform: rotate(360deg); /* Rotate back to original position */
-        opacity: 1;
-        border-radius: 50%;
-    }
-}
