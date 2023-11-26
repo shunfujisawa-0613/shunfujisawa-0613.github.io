@@ -27,7 +27,7 @@ function unhideLightbox1() {
     unhideLightbox('doggo1'); // Replace 'lightbox1' with the actual id from q2.html
 }
 
-document.getElementById('picture-1').onclick = unhideLightbox;
+document.getElementById('picture-1').onclick = unhideLightbox1;
 
 // TODO: Set the browser to run the function unhideLightbox1 when someone clicks #picture-1
 
