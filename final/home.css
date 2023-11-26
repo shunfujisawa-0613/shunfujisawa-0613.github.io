@@ -20,7 +20,12 @@
     background-color: #333;
 }
 
-@media (max-width: 700px) {
+.nav-links.active {
+    display: flex;
+}
+
+/* Hide .nav-links on screens 768px wide or smaller (like iPads) */
+@media (max-width: 768px) {
     .nav-links {
         display: none;
     }
@@ -29,6 +34,7 @@
         display: flex;
     }
 }
+
 
 
 .ART {
@@ -222,10 +228,7 @@ nav .logo {
     font-size: 24px;
 }
 
-.nav-links {
-    list-style: none;
-    display: flex;
-}
+
 
 .nav-links li a {
     text-decoration: none;
@@ -268,6 +271,56 @@ nav .logo {
 .non {
     color: rgb(170, 170, 170);
 }
+
+
+
+
+.sec1 {
+    display: flex;
+    justify-content: center; /* Centers .sec1line1 horizontally */
+    align-items: center; /* Centers .sec1line1 vertically */
+    height: 100vh; /* Full height of the viewport */
+    width: 100vw; /* Full width of the viewport */
+}
+
+.sec1line1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; /* This ensures the content of .sec1line1 is centered */
+    position: relative; /* Allows absolute positioning relative to this container */
+    padding: 20px; /* Optional: to ensure content doesn't touch the edges */
+}
+
+#lettext1 {
+    color: white;
+    font-size: 3vw;
+    margin-right: 30vw; /* Space between #lettext1 and #plusone */
+}
+
+#plusone {
+    color: white;
+    font-weight: 300;
+    font-size: 150px;
+    position: absolute; /* Position #plusone absolutely within .sec1line1 */
+    right: 0; /* Align #plusone to the far right within .sec1line1 */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Footer Styles */
 footer {

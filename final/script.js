@@ -46,3 +46,10 @@ document.addEventListener('DOMContentLoaded', function() {
         navLinks.classList.toggle('active');
     });
 });
+
+var hamburger = document.getElementById('hamburgerMenu');
+var navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', function() {
+    navLinks.classList.toggle('active');
+});
