@@ -1,0 +1,376 @@
+/* Basic Reset */
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hamburger Menu Styles */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 25px;
+    width: 35px;
+}
+
+.hamburger-menu .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+}
+
+.nav-links.active {
+    display: flex;
+}
+
+/* Hide .nav-links on screens 768px wide or smaller (like iPads) */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#globe{
+    width: 30px;
+}
+
+.landing{
+    display: flex;
+    flex-direction: column;
+}
+
+.background {
+    background: linear-gradient(61deg, #809bce, #eac4d5, #95b8d1, #b8e0d2, #dbeadf);
+    background-size: 1000% 1000%;
+    animation: background 13s ease infinite;
+}
+
+.background{
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes background {
+    0%{background-position:94% 0%}
+    50%{background-position:7% 100%}
+    100%{background-position:94% 0%}
+}
+
+#language {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: black
+}
+
+
+/* Typography */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navigation */
+header {
+    background: transparent;
+    padding: 10px 20px;
+    position: static;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* This will push the nav-links to the right */
+    align-items: center; /* This will vertically align the items in the middle */
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* This will center the navigation links */
+    list-style-type: none; /* Removes default list styling */
+    padding: 0; /* Removes default padding */
+  }
+
+  .nav-links li {
+    padding: 0 15px; /* Provides space between the navigation items */
+  }
+  
+  .nav-links a {
+    text-decoration: none; /* This will remove the underline from the links */
+  }
+  
+.social-icon {
+    display: flex;
+    align-items: center;
+    width: 30px;
+    border-radius: 8px;
+  }
+
+ #arin-black-header {
+    max-width: 100px; /* You can set a maximum width for the image */
+    width: 10%;
+    height: auto; /* This will maintain the aspect ratio of the image */
+  }
+
+nav .logo {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
+
+.nav-links li a {
+    text-decoration: none;
+    padding: 0 15px;
+    display: block;
+}
+
+
+/* Home Section */
+#home {
+    padding: 50px;
+    background-color: #eceff1; /* Placeholder color */
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+/* About Section */
+#about {
+    padding: 50px;
+}
+
+/* Company Details Section */
+#company-details {
+    padding: 50px
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px;
+}
+
+#main{
+    color: black;
+    font-weight: bold;
+}
+
+.non {
+    color: white;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f8f8f8; /* Adjust to match your design */
+    color: rgb(170, 170, 170);
+    padding: 40px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.footer-logo {
+    max-width: 120px; /* Adjust as needed */
+
+}
+
+.footer-links,
+.footer-contact {
+    display: flex;
+    align-items: flex-end;
+    margin: 5px 10px;
+}
+
+.footer-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+}
+
+.leftfooter{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-links{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.footer-links a,
+.footer-logo,
+.footer-social a {
+    text-decoration: none;
+    color: rgb(170, 170, 170);
+    margin: 0 10px;
+}
+
+
+.footer-social{
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.footer-social a img {
+    width: 30px; /* Adjust as needed */
+    height: 30px; /* Adjust as needed */
+    border-radius: 8px; /* Adjust as needed */
+    margin-top: 7px;
+}
+
+.footer-contact {
+    text-align: right;
+}
+
+.footer-contact p {
+    margin: 0;
+    line-height: 1.5; /* Adjust as needed */
+}
+
+#Service, #Service:visited {
+    color: white; /* Keeps the link color white even after it's been visited */
+    text-decoration: none; /* Optional: Removes the underline from the link */
+}
+
+.footer-bottom {
+    text-align: center;
+    width: 100%;
+
+    padding-top: 24px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links,
+    .footer-social,
+    .footer-contact {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .footer-links a {
+        margin: 5px 0; /* Adjust as needed */
+    }
+
+    .footer-contact p {
+        text-align: center;
+    }
+}
+
+.background {
+    background: linear-gradient(61deg, #809bce, #eac4d5, #95b8d1, #b8e0d2, #dbeadf);
+    background-size: 1000% 1000%;
+    animation: background 13s ease infinite;
+}
+header {
+    background: transparent;
+    padding: 0;
+    border: none;
+}
+
+header {
+    background: transparent;
+    padding: 10px 20px;
+    position: fixed; /* or 'static' if you don't want it to stick to the top */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10; /* Ensure it's above other content */
+    padding-top: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent; /* This ensures the nav has a transparent background */
+    
+}
+
+.nav-links,
+.nav-links li,
+.nav-links a {
+    background: transparent; /* Ensures that the list and links are transparent */
+}
+
+/* Ensure there's no margin causing space between the nav and the section below */
+body, 
+nav, 
+.nav-links, 
+.nav-links li {
+    margin: 0;
+}
+
+
+
+
+.service-section {
+    position: relative;
+    text-align: center;
+    height: 100vh; /* Adjust the height as needed */
+    margin-top: 5vh;
+}
+
+.circle-background {
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    width: 30vw;
+
+}
+
+.phone-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 30vw;
+    min-width: 400px
+}
+
+.service-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10vw; /* Adjust size as needed */
+    color: white;
+    z-index: 2;
+}
+

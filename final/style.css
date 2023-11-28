@@ -266,10 +266,12 @@ nav .logo {
 
 #main{
     color: black;
+    font-weight: bold;
 }
 
 .non {
     color: rgb(170, 170, 170);
+    font-weight: bold;
 }
 
 
@@ -560,6 +562,11 @@ footer {
 .footer-contact p {
     margin: 0;
     line-height: 1.5; /* Adjust as needed */
+}
+
+#Service, #Service:visited {
+    color: white; /* Keeps the link color white even after it's been visited */
+    text-decoration: none; /* Optional: Removes the underline from the link */
 }
 
 .footer-bottom {
