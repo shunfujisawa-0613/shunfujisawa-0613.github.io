@@ -274,7 +274,10 @@ nav .logo {
     font-weight: bold;
 }
 
-
+#Service, #Service:visited {
+    color: white; /* Keeps the link color white even after it's been visited */
+    text-decoration: none; /* Optional: Removes the underline from the link */
+}
 
 
 .sec1 {
