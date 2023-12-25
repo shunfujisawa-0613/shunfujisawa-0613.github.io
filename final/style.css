@@ -5,24 +5,12 @@
 }
 
 /* Hamburger Menu Styles */
-.hamburger-menu {
-    display: none;
-    cursor: pointer;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 25px;
-    width: 35px;
-}
-
-.hamburger-menu .bar {
-    height: 3px;
-    width: 100%;
-    background-color: #333;
-}
 
 .nav-links.active {
     display: flex;
+    cursor: pointer;
 }
+
 
 /* Hide .nav-links on screens 768px wide or smaller (like iPads) */
 @media (max-width: 768px) {
@@ -176,6 +164,7 @@
 /* Typography */
 body {
     font-family: 'Arial', sans-serif;
+    font-weight: bolder;
 }
 
 /* Navigation */
@@ -192,6 +181,7 @@ nav {
     display: flex;
     justify-content: space-between; /* This will push the nav-links to the right */
     align-items: center; /* This will vertically align the items in the middle */
+    z-index: 50;
   }
   
   .nav-links {
@@ -200,6 +190,7 @@ nav {
     justify-content: center; /* This will center the navigation links */
     list-style-type: none; /* Removes default list styling */
     padding: 0; /* Removes default padding */
+    cursor: pointer;
   }
 
   .nav-links li {
@@ -272,21 +263,26 @@ nav .logo {
 .non {
     color: rgb(170, 170, 170);
     font-weight: bold;
+    cursor: pointer;
 }
 
 #Service, #Service:visited {
     color: white; /* Keeps the link color white even after it's been visited */
     text-decoration: none; /* Optional: Removes the underline from the link */
+    font-weight: 900;
 }
+
 
 
 .sec1 {
     display: flex;
+    font-weight: bold;
     flex-direction: column;
     justify-content: center; /* Centers .sec1line1 horizontally */
     align-items: center; /* Centers .sec1line1 vertically */
     height: 100vh; /* Full height of the viewport */
     width: 100vw; /* Full width of the viewport */
+    font-weight: 900;
 }
 
 .sec1line1 {
@@ -360,6 +356,7 @@ nav .logo {
 .sec2{
     display: flex;
     justify-content: space-around;
+    font-weight: bold;
     
 }
 

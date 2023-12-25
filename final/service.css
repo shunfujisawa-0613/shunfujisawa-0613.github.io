@@ -14,6 +14,8 @@
     width: 35px;
 }
 
+
+
 .hamburger-menu .bar {
     height: 3px;
     width: 100%;
@@ -295,21 +297,35 @@ footer {
     background-size: 1000% 1000%;
     animation: background 13s ease infinite;
 }
-header {
-    background: transparent;
-    padding: 0;
-    border: none;
-}
 
 header {
     background: transparent;
     padding: 10px 20px;
-    position: fixed; /* or 'static' if you don't want it to stick to the top */
+    position: static; /* or 'static' if you don't want it to stick to the top */
     width: 100%;
     top: 0;
     left: 0;
     z-index: 10; /* Ensure it's above other content */
     padding-top: 20px;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.background {
+    position: relative;
+    z-index: -1;
+    /* Other styles */
+}
+
+header {
+    position: relative;
+    z-index: 2; /* Ensure header is above the background */
+    /* Other styles */
 }
 
 nav {
@@ -341,7 +357,7 @@ nav,
     position: relative;
     text-align: center;
     height: 100vh; /* Adjust the height as needed */
-    margin-top: 5vh;
+    margin-top: -5vh;
 }
 
 .circle-background {

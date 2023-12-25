@@ -1,0 +1,649 @@
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+*{
+    font-family: 'Arial', sans-serif;
+}
+
+
+
+
+
+/* HEADER / NAV BAR */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#globe{
+    width: 30px;
+}
+
+header {
+    background: transparent;
+    padding: 10px 20px;
+    position: static;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.nav-links.active {
+    display: flex;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between; /* This will push the nav-links to the right */
+    align-items: center; /* This will vertically align the items in the middle */
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* This will center the navigation links */
+    list-style-type: none; /* Removes default list styling */
+    padding: 0; /* Removes default padding */
+  }
+
+  .nav-links li {
+    padding: 0 15px; /* Provides space between the navigation items */
+  }
+  
+  .nav-links a {
+    text-decoration: none; /* This will remove the underline from the links */
+  }
+
+  #language {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: black
+}
+  
+.social-icon {
+    display: flex;
+    align-items: center;
+    width: 30px;
+    border-radius: 8px;
+  }
+
+ #arin-black-header {
+    max-width: 100px; /* You can set a maximum width for the image */
+    height: auto; /* This will maintain the aspect ratio of the image */
+  }
+
+nav .logo {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
+
+.nav-links li a {
+    text-decoration: none;
+    padding: 0 15px;
+    display: block;
+}
+
+
+/* Home Section */
+#home {
+    padding: 50px;
+    background-color: #eceff1; /* Placeholder color */
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+/* About Section */
+#about {
+    padding: 50px;
+}
+
+/* Company Details Section */
+#company-details {
+    padding: 50px
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px;
+}
+
+#main{
+    color: black;
+    font-weight: bold;
+}
+
+.non {
+    color: rgb(170, 170, 170);
+    font-weight: bold;
+}
+
+#Service, #Service:visited {
+    color: white; /* Keeps the link color white even after it's been visited */
+    text-decoration: none; /* Optional: Removes the underline from the link */
+}
+
+.social-icon, #language{
+    cursor: pointer;
+}
+
+
+/* NAV BAR MOBILE */
+
+@media (max-width: 1060px) {
+    nav {
+        display: none;
+    }
+}
+
+.menu {
+    align-items: center;
+    background-color: transparent;
+    clip-path: polygon(81.05% 9.1%, 92% 9.1%, 92% 10.1%, 81.05% 10.1%);
+    color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    font-size: 28px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: clip-path 400ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 400ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100vw;
+    z-index: 100;
+    right: 0px;
+  }
+  .active .menu {
+    background-color: white;
+    clip-path: polygon(101% -1%, 101% 101%, -1% 101%, -1% -1%);
+    z-index: 100;
+  }
+  .options {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    transform: scale(0.8);
+    transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 100;
+  }
+
+  .option.not{
+    color: gray;
+    z-index: 100;
+  }
+  .option {
+    cursor: pointer;
+    margin: 2vh;
+    z-index: 100;
+  }
+  .option.selected {
+    color: black;
+    z-index: 100;
+  }
+  .active .options {
+    transform: scale(1);
+    z-index: 100;
+  }
+  .x {
+    pointer-events: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 100;
+    
+  }
+  .top-bars {
+    stroke: black;
+    transition: stroke 400ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 100;
+  }
+  .active .top-bars {
+    stroke: black;
+    z-index: 100;
+  }
+  .bar {
+    transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 100;
+  }
+  
+  .bar1 {
+    transform-origin: 190px 20.5px;
+    z-index: 100;
+  }
+  .bar2 {
+    transform-origin: 190px 28.5px;
+    z-index: 100;
+  }
+  .active .bar1 {
+    transform: translateY(8.6px) rotate(45deg);
+    z-index: 100;
+  }
+  .active .bar2 {
+    transform: rotate(-45deg);
+    z-index: 100;
+  }
+  .menu-click-area {
+    cursor: pointer;
+    height: 40px;
+    opacity: 0.3;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 40px;
+    z-index: 100;
+  }
+  
+@media (min-width: 1061px) {
+    .mobilenav {
+        display: none;
+    }
+}
+
+
+/* NAV BAR END */
+
+
+
+
+
+
+/* Preload SCREEN START */
+
+
+.loading-screen{
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100%;
+  background: black;
+  color: white;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+
+.counter{
+  position: fixed;
+  left: 50px;
+  bottom: 50px;
+  display: flex;
+  height: 100px;
+  font-size: 100px;
+  line-height: 102px;
+  clip-path: polygon(0 0, 100% 0, 100% 100px, 0 100px);
+  font-weight: 400;
+}
+
+.counter-1,
+.counter-2,
+.counter-3{
+  position: relative;
+  
+}
+
+.num1offset1{
+  position: relative;
+  right: -25px
+}
+
+.num1offset2{
+  position: relative;
+  right: -10px
+}
+
+.loader{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  background-color: gray;
+
+}
+
+.loader-1{
+  position: relative;
+  background: white;
+  width: 200px;
+
+}
+
+.loader-2{
+  position: relative;
+  width: 100px;
+  background: white;
+  
+}
+
+.bar{
+  height: 50px;
+}
+
+
+.header-revealer{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.header-revealer:after{
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 105%;
+  height: 110%;
+  background: white;
+  top: 80px;
+}
+
+/* Preload FINISH */
+
+
+
+
+
+
+
+
+
+
+
+/* ART START */
+
+.landing{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+@keyframes background {
+  0%{background-position:94% 0%}
+  50%{background-position:7% 100%}
+  100%{background-position:94% 0%}
+}
+
+#face{
+  width: 60%;
+  min-width: 200px;
+  max-width: 700px;
+  margin-top: -5%;
+
+  z-index: 1; /* Lower z-index to be behind the text */
+  position: absolute; /* Position the text absolutely within .ART */
+  top: 65%;
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Offset the position for true centering */
+  white-space: nowrap; /* Ensures the text doesn't wrap */
+  line-height: 1.2; /* Adjust line height for the two lines of text */
+
+}
+
+.ART {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+  width: 100vw;
+  text-align: center;
+}
+
+.overlay-text {
+
+
+
+  position: absolute;
+  
+  color: rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  white-space: nowrap;
+  font-weight: 900;
+
+  /* Adjustments for centering relative to #face */
+  top: calc(32% + ((60% / 2) - (10vw / 2))); /* Adjusted position */
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+
+}
+
+/* Media query for smaller screens */
+@media (min-width: 900px) {
+  .overlay-text {
+      font-size: 200px; /* Minimum font size */
+  }
+}
+
+@media (max-width: 900px) {
+  .overlay-text {
+      font-size: 16vw;
+      top: calc(33% + ((40% / 2) - (10vw / 2))); /* Adjusted position */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+
+  #face{
+    top: calc(33% + ((50% / 2) - (7vw / 2))); /* Adjusted position */
+  }
+  
+}
+
+
+.subtitle{
+  z-index: 11;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  top: 85%; /* Position at the half-height of .ART */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Offset the position for true centering */
+  white-space: nowrap; /* Ensures the text doesn't wrap */
+  line-height: 1.2; /* Adjust line height for the two lines of text */
+  background: linear-gradient(61deg, #809bce, #eac4d5, #95b8d1, #b8e0d2, #dbeadf);
+  background-size: 1000% 1000%;
+  animation: background 13s ease infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /* Make the text color transparent to show the gradient */
+  font-weight: 900;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+
+@keyframes Color{
+
+  0%{color:94% 0%}
+  50%{color:7% 100%}
+  100%{color:94% 0%}
+}
+
+
+/* ART END */
+
+
+
+
+
+
+
+
+
+
+
+
+.background {
+  background: linear-gradient(61deg, #809bce, #eac4d5, #95b8d1, #b8e0d2, #dbeadf);
+  background-size: 1000% 1000%;
+  animation: background 13s ease infinite;
+}
+
+.background{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER CSS */
+
+footer {
+    background-color: #f8f8f8; /* Adjust to match your design */
+    color: rgb(170, 170, 170);
+    padding: 40px 0;
+    font-family: 'Arial', sans-serif;
+    z-index: -10;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.footer-logo {
+    max-width: 120px; /* Adjust as needed */
+
+}
+
+.footer-links,
+.footer-contact {
+    display: flex;
+    align-items: flex-end;
+    margin: 5px 10px;
+}
+
+.footer-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+}
+
+.leftfooter{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-links{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.footer-links a,
+.footer-logo,
+.footer-social a {
+    text-decoration: none;
+    color: rgb(170, 170, 170);
+    margin: 0 10px;
+}
+
+
+.footer-social{
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.footer-social a img {
+    width: 30px; /* Adjust as needed */
+    height: 30px; /* Adjust as needed */
+    border-radius: 8px; /* Adjust as needed */
+    margin-top: 7px;
+}
+
+.footer-contact {
+    text-align: right;
+}
+
+.footer-contact p {
+    margin: 0;
+    line-height: 1.5; /* Adjust as needed */
+}
+
+#Service, #Service:visited {
+    color: white; /* Keeps the link color white even after it's been visited */
+    text-decoration: none; /* Optional: Removes the underline from the link */
+}
+
+.footer-bottom {
+    text-align: center;
+    width: 100%;
+
+    padding-top: 24px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links,
+    .footer-social,
+    .footer-contact {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .footer-links a {
+        margin: 5px 0; /* Adjust as needed */
+    }
+
+    .footer-contact p {
+        text-align: center;
+    }
+}
+
+
+/* FOOTER CSS END */
+
+
+
+
+
+
+
+
+
